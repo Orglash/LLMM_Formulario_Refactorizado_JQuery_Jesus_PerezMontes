@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Register Form Jesús Pérez Montes</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Laila" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body background="img/background.jpg">
+	<div class="container bg">
+		<h1 class="text-center pt-3 text-secondary">The Library Proyect</h1>
+		<h3 class="text-center pt-3 text-secondary">Create your account</h1>
+		<form class="mt-5" action="#" id="main_form">
+			<div class="form-row">
+				<div class="col-md-6 mb-3">
+	      			<label for="user">User*</label>
+	      			<div class="input-group">	        			
+	        			<input type="text" class="form-control required" id="user" placeholder="Enter your desired user name">
+	        			<div class="input-group-append">
+	          				<span class="input-group-text bg-secondary text-light"><i class="fas fa-user"></i></span>
+	        			</div>
+	        			<div id="user_info"></div>
+	      			</div>
+	    		</div>
+	    		<div class="col-md-6 mb-3">
+	      			<label for="pass">Password*</label>
+	      			<div class="input-group">
+	        			<input type="password" class="form-control required" id="pass" placeholder="Enter a password">
+	        			<div class="input-group-append">
+	          				<span class="input-group-text bg-secondary text-light"><i class="fas fa-unlock"></i></span>
+	        			</div>
+						<div id="pass_info"></div>
+	      			</div>
+	    		</div>
+
+	    	</div>
+	    	<div class="form-row">	    	
+					<div class="col-md-6 mb-3">
+		    		<label for="name">Name*</label>
+		      		<div class="input-group">		        		
+		        		<input type="text" class="form-control required" id="name" placeholder="Enter your name">
+		        		<div class="input-group-append">
+		          			<span class="input-group-text bg-secondary text-light"><i class="fas fa-ellipsis-h"></i></span>
+		        		</div>
+						<div id="name_info"></div>
+		      		</div>
+		      	</div>
+		      	<div class="col-md-6 mb-3">
+					<label for="email">E-mail*</label>
+		      			<div class="input-group">		        			
+							<input type="text" class="form-control required" id="email" placeholder="Enter your e-mail">
+							<div class="input-group-append">
+		          				<span class="input-group-text bg-secondary text-light"><i class="fas fa-at"></i></span>
+		        			</div>
+							<div id="email_info"></div>
+		      			</div>
+		      		</div>	      	
+				</div>
+				<div class="form-row">
+					<div class="col-md-12 mb-3">
+						<label for="address">Address</label>
+		      			<div class="input-group">		        			
+			        		<input type="text" class="form-control" id="address" placeholder="Enter your address">
+			        		<div class="input-group-append">
+		          				<span class="input-group-text bg-secondary text-light"><i class="fas fa-address-book"></i></span>
+		        			</div>
+							<div id="adress_info"></div>
+		      			</div>
+		      		</div>		
+				</div>
+				<div class="form-row">
+						<div class="col-md-6 mb-3">
+					<label for="country">Country*</label>
+		      			<div class="input-group">		        			
+			        		<select id="country" class="form-control required">
+			        		<div class="input-group-append">
+		          				<span class="input-group-text bg-secondary text-light"><i class="fas fa-globe-europe"></i></span>
+		        			</div>
+							</select>
+							<div id="country_info"></div>
+		      			</div>
+		      		</div>
+		      		<div class="col-md-6 mb-3">
+					<label for="zipCode">ZIP Code*</label>
+		      			<div class="input-group">		        			
+			        		<input type="text" class="form-control required" id="zipCode" placeholder="ZIP Code">
+			        		<div class="input-group-append">
+		          				<span class="input-group-text bg-secondary text-light"><i class="fas fa-home"></i></span>
+		        			</div>
+							<div id="zipCode_info"></div>
+		      			</div>
+		      		</div>			
+				</div>
+				<div class="form-row">
+							<div class="col-md-6 mb-3">
+					<label for="sex">Sex*</label>
+		      			<div class="form-check">
+		      				<div class="custom-control custom-radio">
+								<input class="custom-control-input required" type="radio" name="sex" id="male" checked="true">
+								<label for="male" class="custom-control-label">Male</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input class="custom-control-input required" type="radio" name="sex" id="female">
+								<label for="female" class="custom-control-label">Female</label>
+								<div id="sex_info"></div>
+							</div>
+							
+						</div>
+		      		</div>
+		      		<div class="col-md-6 mb-3">
+					<label for="lang">Language*</label>
+		      			<div class="form-check">
+		      				<div class="custom-control custom-checkbox">
+								<input class="custom-control-input required" name="language" type="checkbox" id="langSpa">
+								<label for="langSpa" class="custom-control-label">Spanish</label>
+							</div>
+							<div class="custom-control custom-checkbox">
+								<input class="custom-control-input required" name="language" type="checkbox" id="langEng">
+								<label for="langEng" class="custom-control-label">English</label>
+								<div id="language_info"></div>
+							</div>
+						</div>
+						
+		      		</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-12 mt-3">
+						<label for="about">About</label>
+						<div class="input-group">		        			
+							<textarea class="form-control required" id="about" placeholder="What kind of books you like?" rows="3"></textarea>
+							<div class="input-group-append">
+		          				<span class="input-group-text bg-secondary text-light"><i class="fas fa-comment"></i></span>
+		        			</div>
+							<div class="col-md-12 mb-3 text-right"><small id="about" class="form-text"></small></div>
+							<div id="about_info"></div>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-12 text-right mb-3">
+						<small class="text-danger">* Required fields.</small>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="col-md-4 container">
+						<button id="submitBtn" class="col-md-12 btn btn-secondary button" type="submit">Submit</button>
+					</div>
+				</div>
+		</form>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
